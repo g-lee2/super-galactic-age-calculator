@@ -10,5 +10,11 @@ export default class Person {
     this.age /= mercuryToEarthYears;
     return Math.round(this.age);
   }
+
+  venusAge() {
+    let venusToEarthYears = 0.62;
+    this.age /= venusToEarthYears;
+    return Math.round(this.age);
+  }
 };
 
