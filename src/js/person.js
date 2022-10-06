@@ -22,5 +22,11 @@ export default class Person {
     this.age /= marsToEarthYears;
     return Math.round(this.age);
   }
+
+  jupiterAge() {
+    let jupiterToEarthYears = 11.86;
+    this.age /= jupiterToEarthYears;
+    return Math.round(this.age);
+  }
 };
 
