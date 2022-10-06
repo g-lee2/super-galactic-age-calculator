@@ -1,3 +1,5 @@
+import Age from './../src/js/age.js';
+
 describe('Age', () => {
 
   test('should correctly assign each property of the Age class with the value assigned', () => {
