@@ -16,4 +16,9 @@ describe('Person', () => {
     let mercuryAge = newPerson.mercuryAge(newPerson);
     expect(mercuryAge).toEqual(188);
   });
+
+  test('should correctly divide the age and round it to the nearest integer to determine age in Venus years', () => {
+    let venusAge = newPerson.venusAge(newPerson);
+    expect(venusAge).toEqual(73);
+  });
 });
