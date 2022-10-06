@@ -8,7 +8,7 @@ export default class Person {
   mercuryAge() {
     let mercuryToEarthYears = 0.24;
     this.age /= mercuryToEarthYears;
-    return this.age;
+    return Math.round(this.age);
   }
 };
 
