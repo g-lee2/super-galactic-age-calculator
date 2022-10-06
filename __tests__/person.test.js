@@ -26,4 +26,9 @@ describe('Person', () => {
     let marsAge = newPerson.marsAge(newPerson);
     expect(marsAge).toEqual(24);
   });
+
+  test('should correctly divide the age and round it to the nearest integer to determine age in Jupiter years', () => {
+    let jupiterAge = newPerson.jupiterAge(newPerson);
+    expect(jupiterAge).toEqual(4);
+  });
 });
