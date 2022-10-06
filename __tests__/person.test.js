@@ -8,10 +8,10 @@ describe('Person', () => {
     expect(newPerson.lifeExpectancy).toEqual(80);
   });
 
-  test('should correctly divide the age to determine age in Mercury years', () => {
-    const newPerson = new Person(42, 80);
+  test('should correctly divide the age and round it to the nearest integer to determine age in Mercury years', () => {
+    const newPerson = new Person(45, 80);
     let mercuryAge = newPerson.mercuryAge(newPerson);
-    expect(mercuryAge).toEqual(175);
+    expect(mercuryAge).toEqual(188);
   });
 
 });
