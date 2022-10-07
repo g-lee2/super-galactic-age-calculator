@@ -66,4 +66,10 @@ describe('Person', () => {
     let outliveOrYearsLeftMercury = newPerson.outliveOrYearsLeftMercury(newPerson);
     expect(outliveOrYearsLeftMercury).toEqual(145);
   });
+
+  test('should correctly subtract the life expectancy and determine how many years the user lived past the life expectancy age', () => {
+    const newPerson = new Person(81, 80);
+    let outliveOrYearsLeftMercury = newPerson.outliveOrYearsLeftMercury(newPerson);
+    expect(outliveOrYearsLeftMercury).toEqual(5);
+  });
 });
