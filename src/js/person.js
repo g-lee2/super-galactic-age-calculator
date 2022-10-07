@@ -52,4 +52,18 @@ export default class Person {
     this.lifeExpectancy /= jupiterToEarthYears;
     return Math.round(this.lifeExpectancy);
   }
+
+  outliveOrYearsLeftMercury() {
+    let mercuryAge = this.mercuryAge();
+    let lifeExpectanacyMercury = this.lifeExpectanacyMercury();
+    if (mercuryAge > lifeExpectanacyMercury) {
+      let outliveAge =  mercuryAge - lifeExpectanacyMercury;
+      return outliveAge;
+      //"You outlived the life expectancy age by " + outliveAge + " many years.";
+    } else {
+      let yearsLeftToLive = lifeExpectanacyMercury - mercuryAge;
+      return yearsLeftToLive;
+      //"You have " + yearsLeftToLive + " years left to live.";
+    }
+  }
 };
