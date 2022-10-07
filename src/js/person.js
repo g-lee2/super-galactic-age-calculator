@@ -76,4 +76,16 @@ export default class Person {
       return yearsLeftToLive;
     }
   }
+
+  outliveOrYearsLeftMars() {
+    let marsAge = this.marsAge();
+    let lifeExpectanacyMars = this.lifeExpectanacyMars();
+    if (marsAge > lifeExpectanacyMars) {
+      let outliveAge =  marsAge - lifeExpectanacyMars;
+      return outliveAge;
+    } else {
+      let yearsLeftToLive = lifeExpectanacyMars - marsAge;
+      return yearsLeftToLive;
+    }
+  }
 };
