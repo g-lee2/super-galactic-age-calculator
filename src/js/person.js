@@ -34,4 +34,10 @@ export default class Person {
     this.lifeExpectancy /= mercuryToEarthYears;
     return Math.round(this.lifeExpectancy);
   }
+
+  lifeExpectanacyVenus() {
+    let venusToEarthYears = 0.62;
+    this.lifeExpectancy /= venusToEarthYears;
+    return Math.round(this.lifeExpectancy);
+  }
 };
