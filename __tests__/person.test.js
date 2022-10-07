@@ -1,11 +1,6 @@
 import Person from '../src/js/person.js'
 
 describe('Person', () => {
-  let newPerson;
-
-  beforeEach(() => {
-    newPerson = new Person();
-  });
 
   test('should correctly assign each property of the Person class with the value assigned', () => {
     const newPerson = new Person(45, 80);
@@ -67,9 +62,15 @@ describe('Person', () => {
     expect(outliveOrYearsLeftMercury).toEqual(145);
   });
 
-  test('should correctly subtract the life expectancy and determine how many years the user lived past the life expectancy age', () => {
+  test('should correctly subtract the life expectancy age and determine how many years the user lived past the life expectancy age in Mercury years', () => {
     const newPerson = new Person(81, 80);
     let outliveOrYearsLeftMercury = newPerson.outliveOrYearsLeftMercury(newPerson);
     expect(outliveOrYearsLeftMercury).toEqual(5);
+  });
+
+  test('should correctly subtract the life expectancy age and determine how many years the user lived past the life expectancy age in Venus years', () => {
+    const newPerson = new Person(45, 80);
+    let outliveOrYearsLeftVenus = newPerson.outliveOrYearsLeftVenus(newPerson);
+    expect(outliveOrYearsLeftVenus).toEqual(56);
   });
 });
