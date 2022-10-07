@@ -59,11 +59,9 @@ export default class Person {
     if (mercuryAge > lifeExpectanacyMercury) {
       let outliveAge =  mercuryAge - lifeExpectanacyMercury;
       return outliveAge;
-      //"You outlived the life expectancy age by " + outliveAge + " many years.";
     } else {
       let yearsLeftToLive = lifeExpectanacyMercury - mercuryAge;
       return yearsLeftToLive;
-      //"You have " + yearsLeftToLive + " years left to live.";
     }
   }
 };
