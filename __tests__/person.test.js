@@ -32,9 +32,9 @@ describe('Person', () => {
     expect(jupiterAge).toEqual(4);
   });
 
-  test('should correctly convert the life expectancy age in Mercury years and determines either how many years a user has left to live on Mercury or how many years they lived past the life expectanacy age', () => {
+  test('should correctly convert the life expectancy age into Mercury years', () => {
     let lifeExpectancyMercury = newPerson.lifeExpectanacyMercury(newPerson);
-    expect(lifeExpectancyMercury).toEqual(4);
+    expect(lifeExpectancyMercury).toEqual(333);
   });
 
 });
