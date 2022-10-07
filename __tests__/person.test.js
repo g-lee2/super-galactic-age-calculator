@@ -42,4 +42,9 @@ describe('Person', () => {
     expect(lifeExpectancyVenus).toEqual(129);
   });
 
+  test('should correctly convert the life expectancy age into Mars years', () => {
+    let lifeExpectancyMars = newPerson.lifeExpectanacyVenus(newPerson);
+    expect(lifeExpectancyMars).toEqual(43);
+  });
+
 });
