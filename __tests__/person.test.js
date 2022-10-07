@@ -56,7 +56,7 @@ describe('Person', () => {
     expect(lifeExpectancyJupiter).toEqual(7);
   });
 
-  test('should correctly subtract the life expectancy and determine how many years the user has left to live', () => {
+  test('should correctly subtract the life expectancy and determine how many years the user has left to live in Mercury years', () => {
     const newPerson = new Person(45, 80);
     let outliveOrYearsLeftMercury = newPerson.outliveOrYearsLeftMercury(newPerson);
     expect(outliveOrYearsLeftMercury).toEqual(145);
