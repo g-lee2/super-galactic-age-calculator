@@ -47,4 +47,9 @@ describe('Person', () => {
     expect(lifeExpectancyMars).toEqual(43);
   });
 
+  test('should correctly convert the life expectancy age into Jupiter years', () => {
+    let lifeExpectancyJupiter = newPerson.lifeExpectanacyJupiter(newPerson);
+    expect(lifeExpectancyJupiter).toEqual(7);
+  });
+
 });
