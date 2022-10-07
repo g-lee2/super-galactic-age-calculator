@@ -88,4 +88,16 @@ export default class Person {
       return yearsLeftToLive;
     }
   }
+
+  outliveOrYearsLeftJupiter() {
+    let jupiterAge = this.jupiterAge();
+    let lifeExpectanacyJupiter = this.lifeExpectanacyJupiter();
+    if (jupiterAge > lifeExpectanacyJupiter) {
+      let outliveAge =  jupiterAge - lifeExpectanacyJupiter;
+      return outliveAge;
+    } else {
+      let yearsLeftToLive = lifeExpectanacyJupiter - jupiterAge;
+      return yearsLeftToLive;
+    }
+  }
 };
