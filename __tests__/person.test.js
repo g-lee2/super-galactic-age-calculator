@@ -97,4 +97,10 @@ describe('Person', () => {
     let outliveOrYearsLeftJupiter = newPerson.outliveOrYearsLeftJupiter(newPerson);
     expect(outliveOrYearsLeftJupiter).toEqual(3);
   });
+
+  test('should correctly subtract the life expectancy age and determine how many years the user lived past the life expectancy age in Jupiter years', () => {
+    const newPerson = new Person(90, 80);
+    let outliveOrYearsLeftJupiter = newPerson.outliveOrYearsLeftJupiter(newPerson);
+    expect(outliveOrYearsLeftJupiter).toEqual(1);
+  });
 });
