@@ -6,59 +6,59 @@ export default class Person {
   }
 
   mercuryAge(age) {
-    this.age = age;
+    age = this.age;
     let mercuryToEarthYears = 0.24;
-    this.age /= mercuryToEarthYears;
-    return Math.round(this.age);
+    age /= mercuryToEarthYears;
+    return Math.round(age);
   }
 
   venusAge(age) {
-    this.age = age;
+    age = this.age;
     let venusToEarthYears = 0.62;
-    this.age /= venusToEarthYears;
-    return Math.round(this.age);
+    age /= venusToEarthYears;
+    return Math.round(age);
   }
 
   marsAge(age) {
-    this.age = age;
+    age = this.age;
     let marsToEarthYears = 1.88;
-    this.age /= marsToEarthYears;
-    return Math.round(this.age);
+    age /= marsToEarthYears;
+    return Math.round(age);
   }
 
   jupiterAge(age) {
-    this.age = age;
+    age = this.age;
     let jupiterToEarthYears = 11.86;
-    this.age /= jupiterToEarthYears;
-    return Math.round(this.age);
+    age /= jupiterToEarthYears;
+    return Math.round(age);
   }
 
   lifeExpectanacyMercury(lifeExpectancy) {
-    this.lifeExpectancy = lifeExpectancy;
+    lifeExpectancy = this.lifeExpectancy;
     let mercuryToEarthYears = 0.24;
-    this.lifeExpectancy /= mercuryToEarthYears;
-    return Math.round(this.lifeExpectancy);
+    lifeExpectancy /= mercuryToEarthYears;
+    return Math.round(lifeExpectancy);
   }
 
   lifeExpectanacyVenus(lifeExpectancy) {
-    this.lifeExpectancy = lifeExpectancy;
+    lifeExpectancy = this.lifeExpectancy;
     let venusToEarthYears = 0.62;
-    this.lifeExpectancy /= venusToEarthYears;
-    return Math.round(this.lifeExpectancy);
+    lifeExpectancy /= venusToEarthYears;
+    return Math.round(lifeExpectancy);
   }
 
   lifeExpectanacyMars(lifeExpectancy) {
-    this.lifeExpectancy = lifeExpectancy;
+    lifeExpectancy = this.lifeExpectancy;
     let marsToEarthYears = 1.88;
-    this.lifeExpectancy /= marsToEarthYears;
-    return Math.round(this.lifeExpectancy);
+    lifeExpectancy /= marsToEarthYears;
+    return Math.round(lifeExpectancy);
   }
 
   lifeExpectanacyJupiter(lifeExpectancy) {
-    this.lifeExpectancy = lifeExpectancy;
+    lifeExpectancy = this.lifeExpectancy;
     let jupiterToEarthYears = 11.86;
-    this.lifeExpectancy /= jupiterToEarthYears;
-    return Math.round(this.lifeExpectancy);
+    lifeExpectancy /= jupiterToEarthYears;
+    return Math.round(lifeExpectancy);
   }
 
   outliveOrYearsLeftMercury(age, lifeExpectancy) {
@@ -66,7 +66,7 @@ export default class Person {
     lifeExpectancy = this.lifeExpectanacyMercury();
     if (age > lifeExpectancy) {
       let outliveAge =  age - lifeExpectancy;
-      return "Congratulations! You lived " + outliveAge + " years more than the life expectancy age!";
+      return "Congratulations! You lived " + outliveAge + " years more than expected!";
     } else {
       let yearsLeftToLive = lifeExpectancy - age;
       return "You have " + yearsLeftToLive + " years left to live on Mercury!";
@@ -78,7 +78,7 @@ export default class Person {
     lifeExpectancy = this.lifeExpectanacyVenus();
     if (age > lifeExpectancy) {
       let outliveAge =  age - lifeExpectancy;
-      return "Congratulations! You lived " + outliveAge + " years more than the life expectancy age!";
+      return "Congratulations! You lived " + outliveAge + " years more than expected!";
     } else {
       let yearsLeftToLive = lifeExpectancy - age;
       return "You have " + yearsLeftToLive + " years left to live on Venus!";
@@ -90,7 +90,7 @@ export default class Person {
     lifeExpectancy = this.lifeExpectanacyMars();
     if (age > lifeExpectancy) {
       let outliveAge =  age - lifeExpectancy;
-      return "Congratulations! You lived " + outliveAge + " years more than the life expectancy age!";
+      return "Congratulations! You lived " + outliveAge + " years more than expected!";
     } else {
       let yearsLeftToLive = lifeExpectancy - age;
       return "You have " + yearsLeftToLive + " years left to live on Mars!";
@@ -102,7 +102,7 @@ export default class Person {
     lifeExpectancy = this.lifeExpectanacyJupiter();
     if (age > lifeExpectancy) {
       let outliveAge =  age - lifeExpectancy;
-      return "Congratulations! You lived " + outliveAge + " years more than the life expectancy age!";
+      return "Congratulations! You lived " + outliveAge + " years more than expected!";
     } else {
       let yearsLeftToLive = lifeExpectancy - age;
       return "You have " + yearsLeftToLive + " years left to live on Jupiter!";
