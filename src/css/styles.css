@@ -3,9 +3,45 @@ body {
   font-family: 'Silkscreen', cursive;
   text-align: center;
   color: aliceblue;
+  margin-bottom: 10%;
 }
 
 span {
   color: rgb(255, 215, 255);
 }
 
+.jumbotron {
+  background: linear-gradient(navy, black, navy);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.column {
+  float: left;
+  padding: 5px;
+  width: 25%;
+}
+
+img {
+  width: 50%;
+}
+
+.container {
+  display: flex;
+}
+
+h1 {
+  font-size: 400%;
+}
+
+.age-text {
+  font-size: 200%;
+}
+
+hr {
+  background-color: aliceblue;
+}
+
+.years-old {
+  color: white;
+}
