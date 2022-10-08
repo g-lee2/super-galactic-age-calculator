@@ -1,32 +1,35 @@
-# (Application Name)
+# _Super-Galactic-Age-Calculator_
 
-#### (Brief Description of Application)
+#### By _**Grace Lee**_
 
-#### By (Your Name Here)
+#### _A simple website that allows user to view what their age would be on different planets._
 
 ## Technologies Used
 
-* _List all_
-* _the major technologies_
-* _you used in your project_
-* _here_
+* _HTML_
+* _CSS_
+* _Javascript_
+* _Bootstrap_
+* _Lint_ 
+* _Jest_
+* _Babel_
 
 ## Description
 
+_It is a website where a user _
+
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Clone this repository to your desktop._
+* _Go into this project's directory on your desktop._
+* _Find and open the index.html in your browser._
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _No known bugs as of now_
 
 ## License
+
 MIT License
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -47,4 +50,4 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-Copyright (c) _date_ _name_
+Copyright (c) _2022_ _Grace Lee_
