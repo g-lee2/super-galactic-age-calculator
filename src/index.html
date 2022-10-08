@@ -5,12 +5,16 @@
   <title>Super Galactic Age Calculator</title>
 </head>
 <body>
-  <div class="container"></div>
+  <div class="jumbotron">
     <h1>Space Years</h1>
-    <form id="enter-age-form">
-      <label for="age">Enter your age</label><br>
-      <input type="number" id="age" name="age"><br><br>
-      <h2>Pick continent of residence</h2>
+  </div><br>
+  <h3>**Determine what your age is on 4 different planets**</h3><br>
+  <div class="container"></div>
+    <form id="enter-age-form"><hr>
+      <label class="age-text" for="age">Enter your age</label><hr><br>
+      <input type="number" id="age" name="age"> 
+      <span class="years-old">years old</span><br><br><hr>
+      <h2>Pick continent of residence</h2><hr>
       <input type="radio" name="continent" value="northAmerica" id="northAmerica" checked>
       <label for="northAmerica">North America</label><br>
       <input type="radio" name="continent" value="europe" id="europe">
@@ -18,26 +22,38 @@
       <input type="radio" name="continent" value="latinAmerica" id="latinAmerica">
       <label for="latinAmerica">Latin America</label><br>
       <input type="radio" name="continent" value="asia" id="asia">
-      <label for="asia">Asia</label>
+      <label for="asia">Asia</label><br>
       <input type="radio" name="continent" value="africa" id="africa">
-      <label for="africa">Africa</label>
-      <h2>Pick one</h2>
+      <label for="africa">Africa</label><hr>
+      <h2>Pick one</h2><hr>
       <input type="radio" name="gender" value="male" id="male" checked>
-      <label for="male">Male</label>
+      <label for="male">Male</label><br>
       <input type="radio" name="gender" value="female" id="female">
       <label for="female">Female</label><br><br>
       <button type="submit">Calculate my age!</button><br><br>
-    </form>
-    <div id="age-results" class="hidden">
-      <h2>Your Age on different planets:</h2>
-        <p>Your age in Mercury years: <span id="mercury-age"></span></p>
+    </form><hr>
+    <h2>Your Age on different planets</h2><hr><br><br>
+    <div class="container">
+      <div id="mercury" class="column">
+        <img src="./../assets/images/mercury.png" alt="mercury!"><br><br>
+        <p>Your age in Mercury years: <span id="mercury-age"></span></p><br>
         <p>Life Expectancy on Mercury: <span id="mercury-life-expectancy"></span></p>
-        <p>Your age in Venus years: <span id="venus-age"></span></p>
+      </div>
+      <div id="venus" class="column">
+        <img src="./../assets/images/venus.png" alt="venus!"><br><br>
+        <p>Your age in Venus years: <span id="venus-age"></span></p><br>
         <p>Life Expectancy on Venus: <span id="venus-life-expectancy"></span></p>
-        <p>Your age in Mars years: <span id="mars-age"></span></p>
+      </div>
+      <div id="mars" class="column">
+        <img src="./../assets/images/mars.png" alt="mars!"><br><br>
+        <p>Your age in Mars years: <span id="mars-age"></span></p><br>
         <p>Life Expectancy on Mars: <span id="mars-life-expectancy"></span></p>
-        <p>Your age in Jupiter years: <span id="jupiter-age"></span></p>
+      </div>
+      <div id="jupiter" class="column">
+        <img src="./../assets/images/jupiter.png" alt="jupiter!"><br><br>
+        <p>Your age in Jupiter years: <span id="jupiter-age"></span></p><br>
         <p>Life Expectancy on Jupiter: <span id="jupiter-life-expectancy"></span></p>
+      </div>
     </div>
   </div>
 </body> 
