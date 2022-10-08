@@ -6,7 +6,6 @@ import Person from './js/person.js';
 function handleFormSubmission(event) {
   event.preventDefault();
   let inputAge = parseInt(document.getElementById("age").value);
-  //let lifeExpectancyAge = parseInt(document.getElementById("life-age").value);
   let newPerson = new Person(inputAge, inputSelection);
   let mercuryAge = newPerson.mercuryAge(inputAge);
   let venusAge = newPerson.venusAge(inputAge);

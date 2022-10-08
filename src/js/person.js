@@ -96,7 +96,7 @@ export default class Person {
       return "You have " + yearsLeftToLive + " years left to live on Mars!";
     }
   }
-
+  
   outliveOrYearsLeftJupiter(age, lifeExpectancy) {
     age = this.jupiterAge();
     lifeExpectancy = this.lifeExpectanacyJupiter();
