@@ -10,13 +10,13 @@
 * _CSS_
 * _Javascript_
 * _Bootstrap_
-* _Lint_ 
+* _ESLint_ 
 * _Jest_
 * _Babel_
 
 ## Description
 
-_It is a website where a user _
+_It is a website where a user enters their age and returns what that age would be on four different planets. These four planets are Mercury, Venus, Mars and Jupiter. The user will also fill out the form that asks where the user lives and their gender in order to determine what their life expectancy age is. Once that is determined, it was convert the age to the planet's respective year system, and see if you have lived over that age. If not, it will determine how many more years you have left to live on the respective planet._
 
 ## Setup/Installation Requirements
 
