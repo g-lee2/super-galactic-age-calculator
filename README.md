@@ -19,10 +19,15 @@
 _It is a website where a user enters their age and returns what that age would be on four different planets. These four planets are Mercury, Venus, Mars and Jupiter. The user will also fill out the form that asks where the user lives and their gender in order to determine what their life expectancy age is. Once that is determined, it was convert the age to the planet's respective year system, and see if you have lived over that age. If not, it will determine how many more years you have left to live on the respective planet._
 
 ## Setup/Installation Requirements
-
-* _Clone this repository to your desktop._
-* _Go into this project's directory on your desktop._
-* _Find and open the index.html in your browser._
+1. Clone the repository: '[https://github.com/g-lee2/super-galactic-age-calculator.git]' to your desktop.
+2. Navigate to the '[super-galactic-age-calculator]' directory on your desktop.
+3. Open with your favorite text editor (Visual Studio Code was used when setting this project up).
+4. To start a development server and view the project in the browser:
+- Navigate to '[super-galactic-age-calculator]' in your command line
+- Run the command "npm install" to install dependencies
+- Optionally, run the command "npm run build" to bundle the files
+- Finally, run the command "npm run start" to start a development server
+5. To run tests, navigate to '[super-galactic-age-calculator]' in your terminal and run the command "npm run test".
 
 ## Known Bugs
 
